@@ -11,7 +11,7 @@ describe("repository service", () => {
   });
 
   it("surfaces native-shell requirements for unknown browser paths", () => {
-    const inspection = browserFallbackInspection("C:/dev/unknown-repo");
+    const inspection = browserFallbackInspection("C:/workspace/unknown-repo");
 
     expect(inspection.validationState).toBe("unsupported");
     expect(inspection.issues[0]?.code).toBe("native-required");

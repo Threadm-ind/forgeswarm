@@ -22,7 +22,7 @@ const MOCK_INSPECTIONS: RepositoryInspection[] = [
     issues: []
   },
   {
-    path: "C:/dev/forge-audit",
+    path: "C:/workspace/forge-audit",
     name: "forge-audit",
     branch: "main",
     validationState: "valid",
@@ -35,7 +35,7 @@ const MOCK_INSPECTIONS: RepositoryInspection[] = [
     issues: []
   },
   {
-    path: "C:/dev/legacy-ops",
+    path: "C:/workspace/legacy-ops",
     name: "legacy-ops",
     branch: null,
     validationState: "missing-git",
@@ -106,7 +106,7 @@ export function browserFallbackInspection(path: string): RepositoryInspection {
       {
         code: "native-required",
         message:
-          "Arbitrary local path inspection requires the Tauri shell. In browser mode, choose one of the seeded recent repositories or paste the ForgeSwarm workspace path."
+          "Arbitrary local path inspection requires the Tauri shell. In browser mode, choose one of the seeded recent repositories or paste a local repository path."
       }
     ]
   };

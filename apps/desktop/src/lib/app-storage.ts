@@ -15,6 +15,7 @@ import {
 import { MOCK_RECENT_REPOSITORIES } from "./repository-service";
 
 const STORAGE_KEY = "forgeswarm.app-state.v1";
+const DEMO_REPOSITORY_PATH = "C:/workspace/forgeswarm";
 
 export function createDefaultAppSettings(): AppSettingsRecord {
   return {
@@ -52,7 +53,7 @@ export function createDefaultPersistedAppState(): PersistedAppState {
 
 export function createDemoPersistedAppState(): PersistedAppState {
   const inspection = {
-    path: "C:/workspace/forgeswarm",
+    path: DEMO_REPOSITORY_PATH,
     name: "ForgeSwarm",
     branch: "main",
     validationState: "valid",
