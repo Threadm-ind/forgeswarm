@@ -1,0 +1,20 @@
+[package]
+name = "forgeswarm"
+version = "0.1.0"
+description = "ForgeSwarm desktop shell"
+authors = ["Openclaw"]
+edition = "2021"
+
+[lib]
+name = "forgeswarm_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.5.6", features = [] }
+
+[dependencies]
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2.10.3", features = [] }
+tauri-plugin-dialog = "2.6.0"
