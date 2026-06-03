@@ -2,7 +2,7 @@
 name = "forgeswarm"
 version = "0.1.0"
 description = "ForgeSwarm desktop shell"
-authors = ["Openclaw"]
+authors = ["Threadm-ind"]
 edition = "2021"
 
 [lib]
